@@ -42,3 +42,45 @@ body{
     padding: 1em;
 }
 
+.task-done{
+    text-decoration: line-through;
+}
+
+.check{
+    color: rgb(2, 215, 2)
+}
+
+.trash-can{
+    color: red
+}
+
+.rotate-left{
+    color: gray
+}
+
+.check-button{
+    height: 100%;
+    border: none;
+    width: 5em;
+    margin: 0;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.trash-can-button{
+    height: 100%;
+    border: none;
+    width: 5em;
+    margin: 0;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.rotate-left-button{
+    height: 100%;
+    border: none;
+    width: 5em;
+    margin: 0;
+    background-color: white;
+    transition: 0.5s;
+}
