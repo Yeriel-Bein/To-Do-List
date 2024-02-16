@@ -94,5 +94,40 @@ body{
 }
 
 .task-tabs div{
-    cursor:pointer
+    cursor:pointer;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#all{
+    font-family:'Times New Roman', Times, serif;
+}
+
+#ongoing{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#done{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#add-button{
+    background-color: white;
+    color: lightgray;
+    border-color: white;
+}
+
+input{
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+}
+
+.task-ongoing{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.task-done{
+    font-family: 'Times New Roman', Times, serif;
 }

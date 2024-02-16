@@ -73,7 +73,7 @@ function render(){
             </div>
         </div>`;
         }else{resultHTML += `<div class = "task">
-            <div>${list[i].taskContent}</div>
+            <div class = task-ongoing>${list[i].taskContent}</div>
             <div>
                 <button onclick="toggleComplete('${list[i].id}')" class = "check-button"><i class="fa-solid fa-check check"></i></button>
                 <button onclick = "deleteTask('${list[i].id}')" class = "trash-can-button"><i class="fa-solid fa-trash-can trash-can"></i></button>
@@ -100,13 +100,15 @@ function randomIDGenerate(){
 }
 
 function deleteTask(id){
-    for(let i=0; i<taskList.length;i++){
+    for(let i=0; i<taskList.length; i++){
         if(taskList[i].id == id){
-            taskList.splice(i,1);
+            taskList.splice(i,1)
+            // 진행중, 끝남일때도 delete 되게, 필터링된 리스트도 업데이트
+            filterList = filterList.filter(task => task.id !== id);
             break;
         }
     }
-    filter(event)
+    render();
 }
 
 function filter(event){
